@@ -78,7 +78,7 @@ form {
   text-decoration: none;
 }
 
-.nav-link:active {
+.nav-link--actived {
   padding: 15px 30px;
   background-color: #FFC740;
   color: #ffffff;  

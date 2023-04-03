@@ -86,7 +86,7 @@ form {
 
 .main_article {
   height: 330px; 
-  background-image: url(/img/Mountains-and-hills-julian-alps.jpg);
+  background-image: url(./img/Mountains-and-hills-julian-alps.jpg);
   background-size: cover;
   padding: 20px 410px 20px 40px;
   margin-bottom: 35px;

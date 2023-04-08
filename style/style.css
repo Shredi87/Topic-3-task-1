@@ -1,3 +1,320 @@
-body {
-  
+/* text */
+
+.text {
+  font-family: 'Roboto' sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 14px;
+  color: #000000;
+}
+
+.text_white {
+  color: #ffffff;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.text_big {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* background */
+
+.bg_purple {
+  background-color: #9B51E0;
+}
+
+.bg_orange {
+  background-color: #FFC740;
+}
+
+/* body */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  width: 1260px;
+  margin: 0 auto;
+  border-top: 5px solid #9B51E0;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* header */
+
+.header {
+  padding-top: 30px;
+  height: 135px;
+  margin-bottom: 20px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header__logo {}
+
+.header__search-form {
+  padding-top: 10px;
+}
+
+.header__nav {}
+
+/* search-form */
+
+.search-form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.search-form__input {
+  border: 1px solid #9B51E0;
+}
+
+.search-form__button {}
+
+/* button */
+
+.button {
+  background-color: #9B51E0;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  padding: 8px 24px;
+}
+
+.button_small {
+  padding: 7px 11px;
+}
+
+/* nav */
+
+.nav {}
+
+.nav__wrapper {}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.nav__item {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 15px 20px;
+  color: inherit;
+}
+
+.nav__link_actived {
+  background-color: #FFC740;
+  color: #ffffff;
+}
+
+/* article-main */
+
+.article-main {
+    position: relative;
+    height: 330px;
+    background: url(../img/Mountains-and-hills-julian-alps.jpg) 0 0 no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+
+.article-main__bg-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .38);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.article-main__inner {
+  margin-left: 25px;
+  position: relative;
+  z-index: 3;
+}
+
+.article-main__title {
+  width: 500px;
+  margin-bottom: 5px;
+  font-size: 66px;
+  line-height: 75px;
+  color: #FFC740;
+  font-weight: 400;
+}
+
+.article-main__description {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.article-main__button {}
+
+/* article */
+
+.article {}
+
+.article__wrapper {
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 35px 20px;
+}
+
+.article-big {
+  grid-column: span 3;
+}
+
+.article-small {
+  grid-column: span 2;
+}
+
+.article-clients {
+  grid-column: span 6;
+}
+
+.article__header-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.article__left-span {
+  width: 16px;
+  height: 16px;
+}
+
+.article__right-span {
+  height: 16px;
+  flex-grow: 1;
+}
+
+.article__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  padding: 1px 5px;
+}
+
+.article__title_mini {
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.article__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__img-wrapper {
+  width: 144px;
+  height: 144px;
+  border: 2px solid #FFC740;
+  margin-top: 5px;
+}
+
+.article__img-wrapper_mini {
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+.article__img {
+  max-width: 141px;
+  max-height: 140px;
+  border: 2px solid #FFFFFF;
+  margin-right: 15px;
+}
+
+.article__img_mini {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.article__description-wrapper {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article__description-wrapper_mini {
+  margin-left: 10px;
+}
+
+.article__description {
+  text-align: justify;
+  font-size: 13px;
+}
+
+.article__description_mini {
+  margin-bottom: 18px;
+}
+
+.article__content-wrapper_mini:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.article__link {
+  color: inherit;
+}
+
+.article__description-author {}
+
+.article-clients__content{
+  height: 145px;
+  margin: 10px 70px;
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+}
+
+.article-clients__img {}
+
+/* footer */
+
+.footer {
+  height: 115px;
+  background-color: #9B51E0;
+}
+
+.footer__content {
+  padding: 50px;
+  text-align: center;
 }

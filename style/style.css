@@ -483,4 +483,8 @@
   .article-main__description {
     width: 350px;
   }
+
+  .article__description-wrapper {
+    width: 100%;
+  }
 }

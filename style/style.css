@@ -45,12 +45,19 @@
   max-width: 1260px;
   margin: 0 auto;
   border-top: 5px solid #9B51E0;
+  position: relative;
 }
 
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
   min-height: 100vh;
+}
+
+.audio {
+  position: fixed;
+  top: 33px;
+  left: 770px;
 }
 
 /* header */
@@ -145,10 +152,17 @@
 .article-main {
     position: relative;
     height: 330px;
-    background: url(../img/Mountains-and-hills-julian-alps.jpg) 0 0 no-repeat;
-    background-size: cover;
     padding: 20px;
     margin-bottom: 35px;
+}
+
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 920px;
+  height: 330px;
 }
 
 .article-main__bg-color {
@@ -164,7 +178,7 @@
 }
 
 .article-main__inner {
-  margin-left: 25px;
+  margin-left: 190px;
   position: relative;
   z-index: 3;
 }

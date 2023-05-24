@@ -1,0 +1,17 @@
+@import url(../variables.scss);
+
+.search-form {
+  @extend %indents-zero;
+  display: flex;
+
+  // .search-form__input
+
+  &__input {
+    border: 1px solid $first-main-color;
+  }
+
+  // .search-form__button
+
+  &__button {
+  }
+}

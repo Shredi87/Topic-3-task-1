@@ -1,0 +1,18 @@
+@import url(../variables.scss);
+
+.button {
+  background-color: $first-main-color;
+  color: $white-color-text;
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  padding: 8px 24px;
+
+  // .button_small
+
+  &_small {
+    padding: 7px 11px;
+  }
+}

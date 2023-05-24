@@ -1,0 +1,77 @@
+@import url(./SCSS/variables.scss);
+
+.article-main {
+  position: relative;
+  height: 330px;
+  background: url(../img/Mountains-and-hills-julian-alps.jpg) 0 0 no-repeat;
+  background-size: cover;
+  margin-bottom: 35px;
+  padding: 20px;
+
+  @media (min-width >= 760px) and (max-width < 980px) {
+    margin-bottom: 25px;
+  }
+
+  // .article-main__bg-color
+
+  &__bg-color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .38);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  // .article-main__inner
+
+  &__inner {
+    margin-left: 25px;
+    position: relative;
+    z-index: 3;
+
+    @media (max-width >= 430px) and (max-width < 480px) {
+      margin-left: 0;
+    }
+  }
+
+  // .article-main__title
+
+  &__title {
+    width: 500px;
+    margin-bottom: 5px;
+    font-size: $font-size-title;
+    line-height: $line-height-title;
+    color: $second-main-color;
+    font-weight: normal;
+
+    @media (min-width >= 520px) and (max-width < 620px) {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width < 430px) {
+      width: 350px;
+      line-height: 40px;
+    }
+  }
+
+  // .article-main__description
+
+  &__description {
+    width: 400px;
+    margin-bottom: 20px;
+
+    @media (max-width < 430px) {
+      width: 350px;
+    }
+  }
+
+  // .article-main__button
+
+ 
+}
+

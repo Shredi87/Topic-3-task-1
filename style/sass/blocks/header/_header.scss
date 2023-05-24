@@ -1,0 +1,42 @@
+@import url(../variables.scss);
+
+.header {
+  margin-bottom: 20px;
+  padding-top: 30px;
+  height: 135px;
+
+  @media (min-width >= 760px) and (max-width < 980px) {
+    padding-top: 15px;
+  }
+
+  // .header__top
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @media (min-width >= 760px) and (max-width < 980px) {
+      margin-bottom: 15px;
+    }
+
+  }
+
+  // .header__logo
+
+
+  // .header__search-form
+
+  &__search-form {
+    padding-top: 10px;
+  }
+
+  // .header__nav
+  &__nav {
+    @media (min-width >= 760px) and (max-width < 980px) {
+      height: 60px;
+    }
+  }
+}
+
+

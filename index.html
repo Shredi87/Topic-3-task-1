@@ -4,232 +4,257 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/normalize.css">
-  <link rel="stylesheet" href="./style/style.css">
+  <link href="./style/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <title>Title</title>
+  <title>Topic 4 Task 1</title>
 </head>
-<body>
+
+<body class="body">
   <div class="wrapper">
-      <header>
-        <div>
-          <img src="./img/logo.svg" alt="Super logo" class="logo">
-          <form action="#" class="search" method="post">
-            <input type="text" class="search-text">
-            <button class="search-button white_text link-text">GO</button>
+    <header class="header">
+      <div class="header__top">
+        <a class="header__logo" href="#">
+          <img src="./img/logo.svg" alt="logo">
+        </a>
+        <div class="header__search-form">
+          <form class="search-form" action="#" method="post">
+            <input class="search-form__input" type="text">
+            <button class="search-form__button button button_small">GO</button>
           </form>
         </div>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="" class="nav-link nav-link--actived">HOME</a></li>
-            <li class="nav-item"><a href="" class="nav-link">ABOUT US</a></li>
-            <li class="nav-item"><a href="" class="nav-link">SERVICE</a></li>
-            <li class="nav-item"><a href="" class="nav-link">PARTNERS</a></li>
-            <li class="nav-item"><a href="" class="nav-link">CUSTOMERS</a></li>
-            <li class="nav-item"><a href="" class="nav-link">PROJECT</a></li>
-            <li class="nav-item"><a href="" class="nav-link">CAREERS</a></li>
-            <li class="nav-item"><a href="" class="nav-link">CONTACT</a></li>
+      </div>
+      <nav class="header__nav nav">
+        
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link_actived text_white text_bold text_big" href="#">HOME</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link text_bold text_big" href="#">ABOUT US</a>
+            </li>
+            <li class="nav__item nav__item_break-mini"></li>
+            <li class="nav__item">
+              <a class="nav__link text_bold text_big" href="#">SERVICE</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link text_bold text_big" href="#">PARTNERS</a>
+            </li>
+            <li class="nav__item nav__item_break-midi"></li>
+            <li class="nav__item">
+              <a class="nav__link text_bold text_big" href="#">CUSTOMERS</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link text_bold text_big" href="#">PROJECT</a>
+            </li>
+            <li class="nav__item nav__item_break-mini"></li>
+            <li class="nav__item">
+              <a class="nav__link text_bold text_big" href="#">CAREERS</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link text_bold text_big" href="#">CONTACT</a>
+            </li>
           </ul>
-        </nav>
-      </header>
-      <main class="main">
-        <article class="main_article">
-          <div class="main-article__inner">
-            <h1>Aliquam pharetra vulputate</h1>
-            <div>
-              <p class="white_text">Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse
-                sollicitudin quam eget condimentum
-                posuere. In auctor vel mi porta commodo. Vestibulum mattis fringilla tempus. Etiam eu consectetur nisi. Aenean
-                blandit
-                sodales euismod. In hac habitasse platea dictumst.
-              </p>
-              <a class="main_article--link white_text link-text" href="http://#">READ MORE</a>
+        
+      </nav>
+    </header>
+    <article class="article-main">
+      <div class="article-main__bg-color"></div>
+      <div class="article-main__inner">
+        <h1 class="article-main__title">Aliquam pharetra vulputate</h1>
+        <p class="article-main__description text_white text_big">Vivamus est mauris, sollicitudin ut ipsum pharetra, porta
+          rutrum turpis. Suspendisse
+          sollicitudin quam eget condimentum
+          posuere. In auctor vel mi porta commodo. Vestibulum mattis fringilla tempus. Etiam eu consectetur nisi. Aenean
+          blandit
+          sodales euismod. In hac habitasse platea dictumst.
+        </p>
+        <a class="button article-main__button" href="#">READ MORE</a>
+    </article>
+    <div class="article__wrapper">
+      <article class="article article-big">
+        <div class="article__header-wrapper">
+          <span class="article__left-span bg_purple"></span>
+          <h2 class="article__title">ABOUT SUPER LOGO</h2>
+          <span class="article__right-span bg_purple"></span>
+        </div>
+        <div class="article__content-wrapper">
+          <div class="article__img-wrapper">
+            <img class="article__img" src="./img/article_img_1.png" alt="dog">
           </div>
+          <div class="article__description-wrapper">
+            <p class="article__description text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim
+              at nisi nec, iaculis
+              molestie leo.
+              Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
+              non
+              fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
+              sagittis.
+              Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+            <a class="article__link text" href="#">Read more...</a>
           </div>
-        </article>
-        <div class="article_wrapper">
-          <article class="article big_article--1">
-            <div class="article_header">
-              <span class="left_span purple_span"></span>
-              <h2 class="header_text">ABOUT SUPER LOGO</h2>
-              <span class="right_span purple_span"></span>
-            </div>
-            <div class="article_content">
-              <div class="article_img--wrapper">
-                <img src="./img/article_img_1.png" alt="article_img" class="article_img">
-              </div>
-              <div class="desicription_article">
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis
-                  molestie leo.
-                  Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non
-                  fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
-                  sagittis.
-                  Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-                <a href="#" class="link article_link">Read more...</a>
-              </div>
-            </div>
-          </article>
-          <article class="article big_article--2">
-            <div class="article_header">
-              <span class="left_span orange_span"></span>
-              <h2 class="header_text">ABOUT SUPER LOGO</h2>
-              <span class="right_span orange_span"></span>
-            </div>
-            <div class="article_content">
-              <div class="article_img--wrapper">
-                <img src="./img/article_img_2.png" alt="article_img" class="article_img">
-              </div>
-              <div class="desicription_article">
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-                  iaculis
-                  molestie leo.
-                  Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
-                  non
-                  fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
-                  sagittis.
-                  Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-                <p>Steve Jobs, CEO</p>
-              </div>
-            </div>
-          </article>
-          <article class="article big_article--3">
-            <div class="article_header">
-              <span class="left_span orange_span"></span>
-              <h2 class="header_text">SOME WORDS OUR CEO</h2>
-              <span class="right_span orange_span"></span>
-            </div>
-            <div class="article_content">
-              <div class="article_img--wrapper">
-                <img src="./img/article_img_3.png" alt="article_img" class="article_img">
-              </div>
-              <div class="desicription_article">
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-                  iaculis
-                  molestie leo.
-                  Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
-                  non
-                  fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
-                  sagittis.
-                  Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-                <a href="#" class="link article_link">Read more...</a>
-              </div>
-            </div>
-          </article>
-          <article class="article big_article--4">
-            <div class="article_header">
-              <span class="left_span purple_span"></span>
-              <h2 class="header_text">SOME WORDS OUR CEO</h2>
-              <span class="right_span purple_span"></span>
-            </div>
-            <div class="article_content">
-              <div class="article_img--wrapper">
-                <img src="./img/article_img_4.png" alt="article_img" class="article_img">
-              </div>
-              <div class="desicription_article">
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-                  iaculis
-                  molestie leo.
-                  Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
-                  non
-                  fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
-                  sagittis.
-                  Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-                <p>Steve Jobs, CEO</p>
-              </div>
-            </div>
-          </article>
-          <article class="article small_article--1">
-            <div class="article_header">
-              <span class="left_span orange_span"></span>
-              <h2 class="header_text">SERVICES</h2>
-              <span class="right_span orange_span"></span>
-            </div>
-            <div class="article_content article_content--small">
-              <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-                  iaculis
-                  molestie leo.
-                  Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
-                  non
-                  fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
-                  sagittis.
-                  Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-              <a href="#" class="link article_link">Read more...</a>
-              
-            </div>
-          </article>
-          <article class="article small_article--2">
-            <div class="article_header">
-              <span class="left_span purple_span"></span>
-              <h2 class="header_text">RESENT POSTS</h2>
-              <span class="right_span purple_span"></span>
-            </div>
-            <div class="article_content article_content--small">
-              <div class="small_article--2--content">
-                <img src="./img/small_img_1.png" alt="small_img" class="small_img">
-                <div class="small-article--2--description">
-                  <h3>LOREM IPSUM</h3>
-                  <p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
-                </div>
-              </div>
-              
-                <div class="small_article--2--content">
-                  <img src="./img/small_img_2.png" alt="small_img" class="small_img">
-                  <div class="small-article--2--description">
-                    <h3>LOREM IPSUM</h3>
-                    <p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
-                  </div>
-                </div>
-                <div class="article_content article_content--small">
-                  <div class="small_article--2--content">
-                    <img src="./img/small_img_3.png" alt="small_img" class="small_img">
-                    <div class="small-article--2--description">
-                      <h3>LOREM IPSUM</h3>
-                      <p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </article>
-          <article class="article small_article--3">
-            <div class="article_header">
-              <span class="left_span orange_span"></span>
-              <h2 class="header_text">SERVICES</h2>
-              <span class="right_span orange_span"></span>
-            </div>
-            <div class="article_content article_content--small">
-              <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-                iaculis
-                molestie leo.
-                Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
-                non
-                fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
-                sagittis.
-                Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-              <a href="#" class="link article_link">Read more...</a>
-          
-            </div>
-          </article>
-          <article class="article clients_article">
-            <div class="article_header">
-              <span class="left_span purple_span"></span>
-              <h2 class="header_text">CLENTS</h2>
-              <span class="right_span purple_span"></span>
-            </div>
-            <div class="clients_article--content">
-              <img src="./img/client_img-1.jpg" alt="client_img">
-              <img src="./img/client_img-2.jpg" alt="client_img">
-              <img src="./img/client_img-3.jpg" alt="client_img">
-              <img src="./img/client_img-4.jpg" alt="client_img">
-              <img src="./img/client_img-5.jpg" alt="client_img">
-            </div>
-          </article>
-          
-      </main>
+        </div>
+      </article>
+      <article class="article article-big">
+        <div class="article__header-wrapper">
+          <span class="article__left-span bg_orange"></span>
+          <h2 class="article__title">SOME WORDS OUR CEO</h2>
+          <span class="article__right-span bg_orange"></span>
+        </div>
+        <div class="article__content-wrapper">
+          <div class="article__img-wrapper">
+            <img class="article__img" src="./img/article_img_2.png" alt="jobs">
+          </div>
+          <div class="article__description-wrapper">
+            <p class="article__description text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim
+              at nisi nec, iaculis
+              molestie leo.
+              Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
+              non
+              fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
+              sagittis.
+              Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+            <p class="article__description-author text">Steve Jobs, CEO</p>
+          </div>
+      </article>
+      <article class="article article-big">
+        <div class="article__header-wrapper">
+          <span class="article__left-span bg_orange"></span>
+          <h2 class="article__title">ABOUT SUPER LOGO</h2>
+          <span class="article__right-span bg_orange"></span>
+        </div>
+        <div class="article__content-wrapper">
+          <div class="article__img-wrapper">
+            <img class="article__img" src="./img/article_img_3.png" alt="lemur">
+          </div>
+          <div class="article__description-wrapper">
+            <p class="article__description text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim
+              at nisi nec, iaculis
+              molestie leo.
+              Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
+              non
+              fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
+              sagittis.
+              Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+            <a class="article__link text" href="#">Read more...</a>
+          </div>
+      </article>
+      <article class="article article-big">
+        <div class="article__header-wrapper">
+          <span class="article__left-span bg_purple"></span>
+          <h2 class="article__title">SOME WORDS OUR CEO</h2>
+          <span class="article__right-span bg_purple"></span>
+        </div>
+        <div class="article__content-wrapper">
+          <div class="article__img-wrapper">
+            <img class="article__img" src="./img/article_img_4.png" alt="rapunzel">
+          </div>
+          <div class="article__description-wrapper">
+            <p class="article__description text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim
+              at nisi nec, iaculis
+              molestie leo.
+              Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
+              non
+              fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
+              sagittis.
+              Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+            <p class="article__description-author text">Steve Jobs, CEO</p>
+          </div>
+        </div>
+      </article>
+      <article class="article article-small">
+        <div class="article__header-wrapper">
+          <span class="article__left-span bg_orange"></span>
+          <h2 class="article__title">SERVICES</h2>
+          <span class="article__right-span bg_orange"></span>
+        </div>
+        <div class="article__description-wrapper article__description_mini-grow">
+          <p class="article__description article__description_mini article__description_mini-grow text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim
+            at nisi nec, iaculis
+            molestie leo.
+            Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
+            non
+            fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
+            sagittis.
+            Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+          <a class="article__link text" href="#">Read more...</a>
+        </div>
+      </article>
+      <article class="article article-small">
+        <div class="article__header-wrapper">
+          <span class="article__left-span bg_purple"></span>
+          <h2 class="article__title">RESENT POSTS</h2>
+          <span class="article__right-span bg_purple"></span>
+        </div>
+        <div class="article__content-wrapper article__content-wrapper_mini">
+          <div class="article__img-wrapper article__img-wrapper_mini">
+            <img class="article__img article__img_mini" src="./img/small_img_1.png" alt="bmw">
+          </div>
+          <div class="article__description-wrapper article__description-wrapper_mini article__description_mini-grow">
+            <h3 class="article__title article__title_mini">LOREM IPSUM</h3>
+            <p class="article__description  article__description_mini-grow text">
+              Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+          </div>
+        </div>
+        <div class="article__content-wrapper article__content-wrapper_mini">
+          <div class="article__img-wrapper article__img-wrapper_mini">
+            <img class="article__img article__img_mini" src="./img/small_img_2.png" alt="bmw">
+          </div>
+          <div class="article__description-wrapper article__description-wrapper_mini article__description_mini-grow">
+            <h3 class="article__title article__title_mini">LOREM IPSUM</h3>
+            <p class="article__description  article__description_mini-grow text">
+              Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+          </div>
+        </div>
+        <div class="article__content-wrapper article__content-wrapper_mini">
+          <div class="article__img-wrapper article__img-wrapper_mini">
+            <img class="article__img article__img_mini" src="./img/small_img_3.png" alt="bmw">
+          </div>
+          <div class="article__description-wrapper article__description-wrapper_mini article__description_mini-grow">
+            <h3 class="article__title article__title_mini">LOREM IPSUM</h3>
+            <p class="article__description  article__description_mini-grow text">
+              Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+          </div>
+        </div>
+      </article>
+      <article class="article article-small">
+        <div class="article__header-wrapper">
+          <span class="article__left-span bg_orange"></span>
+          <h2 class="article__title">SERVICES</h2>
+          <span class="article__right-span bg_orange"></span>
+        </div>
+        <div class="article__description-wrapper article__description_mini-grow ">
+          <p class="article__description article__description_mini text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim
+            at nisi nec, iaculis
+            molestie leo.
+            Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
+            non
+            fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus
+            sagittis.
+            Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+          <a class="article__link text" href="#">Read more...</a>
+        </div>
+      </article>
+      <article class="article article-clients">
+        <div class="article__header-wrapper">
+          <span class="article__left-span bg_purple"></span>
+          <h2 class="article__title">CLENTS</h2>
+          <span class="article__right-span bg_purple"></span>
+        </div>
+        <div class="article-clients__content">
+          <img class="article-clients__img" src="./img/client_img-1.jpg" alt="client_img">
+          <img class="article-clients__img" src="./img/client_img-2.jpg" alt="client_img">
+          <img class="article-clients__img" src="./img/client_img-3.jpg" alt="client_img">
+          <img class="article-clients__img" src="./img/client_img-4.jpg" alt="client_img">
+          <img class="article-clients__img" src="./img/client_img-5.jpg" alt="client_img">
+        </div>
+      </article>
+    </div>
   </div>
-  <footer>
-    <p class="white_text">Copyright © Lodoss Team 2018</p>
+  <footer class="footer">
+    <p class="footer__content text_white text_bold text_big">Copyright © Lodoss Team 2018</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 const articles = document.querySelectorAll('.article-big');
 for (let article of articles) {
-    //const img = article.querySelector('img');
     const text = article.querySelector('div > p');
     
     async function giveText() {
@@ -16,4 +15,5 @@ for (let article of articles) {
         .then(data => text.textContent = data)
     }
 
+    giveText();
 }
